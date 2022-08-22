@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-jhlee11
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: postgres-jhlee11
+  template:
+    metadata:
+      labels:
+        app: postgres-jhlee11
+    spec:
+      containers:
+      - image: postgres:12
+        name: guestbook-ui
+        ports:
+        - containerPort: 5432
