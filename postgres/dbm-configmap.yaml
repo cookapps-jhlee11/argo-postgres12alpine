@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+kind: ConfigMap
+metadata:
+  name: tcp-services
+  namespace: database-pg
+data:
+  5432: "database-pg/postgres-jhlee11:5432"
