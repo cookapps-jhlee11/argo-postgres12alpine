@@ -5,7 +5,7 @@ metadata:
   namespace: database-pg
 spec:
   ports:
-  - port: 5432
+  - port: 80
     targetPort: 5432
   selector:
     app: postgres-jhlee11

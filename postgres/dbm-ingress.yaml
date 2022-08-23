@@ -22,5 +22,5 @@ spec:
               service:
                 name: "postgres-jhlee11"
                 port:
-                  number: 5432
+                  number: 80
 
